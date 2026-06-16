@@ -4,25 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contrato de Fotografia — 2frame</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --cream: #F5EFE4;
-    --cream-light: #FAF7F2;
-    --dark: #141210;
-    --warm-mid: #8C7B6B;
-    --warm-border: #D4C5B0;
-    --accent: #C8A96E;
-    --text-main: #2A2218;
-    --text-muted: #7A6E62;
+    --cream: #F7F7F7;
+    --cream-light: #FFFFFF;
+    --dark: #111111;
+    --warm-mid: #666666;
+    --warm-border: rgba(0,0,0,0.08);
+    --accent: #DD6211;
+    --text-main: #111111;
+    --text-muted: #666666;
   }
 
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--cream-light);
     color: var(--text-main);
     min-height: 100vh;
@@ -30,7 +30,7 @@
 
   /* HEADER */
   .header {
-    background: var(--dark);
+    background: #111111;
     padding: 28px 48px;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@
   }
   .logo-wrap { display: flex; align-items: center; gap: 14px; }
   .logo-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: 300;
     color: var(--cream);
@@ -72,7 +72,7 @@
   }
   .header-doc-info { text-align: right; }
   .header-doc-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 12px;
     font-style: italic;
     color: var(--warm-mid);
@@ -84,7 +84,7 @@
     background: transparent;
     border: 1px solid var(--warm-border);
     color: var(--cream);
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -92,12 +92,12 @@
     cursor: pointer;
     transition: all 0.2s;
   }
-  .btn-print:hover { background: var(--accent); border-color: var(--accent); color: var(--dark); }
+  .btn-print:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
   .btn-word { border-color: #4472C4; color: #8ab4f8; }
   .btn-word:hover { background: #4472C4 !important; border-color: #4472C4 !important; color: #fff !important; }
   .btn-word.loading { opacity: 0.5; cursor: wait; }
 
-  .gold-line { height: 2px; background: linear-gradient(90deg, var(--dark) 0%, var(--accent) 40%, var(--warm-border) 100%); }
+  .gold-line { height: 2px; background: linear-gradient(90deg, #111111 0%, var(--accent) 40%, rgba(221,98,17,0.25) 100%); }
 
   /* HERO */
   .hero {
@@ -110,7 +110,7 @@
     align-items: end;
   }
   .hero-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 52px;
     font-weight: 300;
     line-height: 1.1;
@@ -135,7 +135,7 @@
     background: transparent;
     padding: 4px 0;
     width: 100%;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     outline: none;
     transition: border-color 0.2s;
   }
@@ -171,7 +171,7 @@
   }
   .nav-item:hover { color: var(--accent); }
   .nav-item-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     color: var(--warm-border);
     min-width: 20px;
@@ -231,7 +231,7 @@
     background: transparent;
     padding: 4px 0;
     width: 100%;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     outline: none;
     transition: border-color 0.2s;
   }
@@ -251,7 +251,7 @@
     margin-bottom: 16px;
   }
   .clausula-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
     font-weight: 300;
     color: var(--accent);
@@ -294,7 +294,7 @@
     width: 100%;
     border: none;
     background: transparent;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 300;
     color: var(--text-main);
@@ -343,7 +343,7 @@
     margin-bottom: 8px;
   }
   .pagamento-value {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 300;
     color: var(--text-main);
@@ -351,7 +351,7 @@
     padding-bottom: 6px;
   }
   .pagamento-value input {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 300;
     color: var(--text-main);
@@ -382,7 +382,7 @@
   }
   .assin-local {
     text-align: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 14px;
     font-style: italic;
     color: var(--warm-mid);
@@ -403,7 +403,7 @@
 
   /* FOOTER */
   .footer {
-    background: var(--dark);
+    background: #111111;
     padding: 24px 48px;
     display: flex;
     align-items: center;
